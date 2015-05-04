@@ -1,4 +1,4 @@
-# php ubuntu dockerfile
+# logstash-forwarder dockerfile
 
 # pull base image
 FROM dockerfile/ubuntu

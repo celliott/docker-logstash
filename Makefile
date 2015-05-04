@@ -1,4 +1,4 @@
-# Makefile for docker-logstash-client
+# Makefile for docker-logstash-forwarder
 
 # set token
 ELK_HOST ?= '45.55.215.236'
@@ -6,7 +6,7 @@ ELK_HOST ?= '45.55.215.236'
 # docker settings
 ENVS =  -e ELK_HOST=$(ELK_HOST)
 PORTS = -p 7001:7001
-CONTAINER = logstash-client
+CONTAINER = logstash-forwarder
 VOLUMES = -v /var/log:/var/host/log
 
 
