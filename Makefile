@@ -4,7 +4,7 @@
 ELK_HOST ?= '45.55.215.236'
 
 # docker settings
-ENVS =  -e ELK_HOST=$(ELK_HOST) -h $$(hostname -f)
+ENVS =  -e ELK_HOST=$(ELK_HOST)
 PORTS = -p 7001:7001
 CONTAINER = logstash-client
 VOLUMES = -v /var/log:/var/host/log
